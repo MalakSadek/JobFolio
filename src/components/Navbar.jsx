@@ -17,10 +17,10 @@ const Navbar = () => {
               <img
                 className="h-10 w-auto"
                 src={logo}
-                alt="React Jobs"
+                alt="JobFolio"
               />
               <span className="hidden md:block text-white text-2xl font-bold ml-2"
-                >React Jobs</span
+                >JobFolio</span
               >
             </NavLink>
             <div className="md:ml-auto">
