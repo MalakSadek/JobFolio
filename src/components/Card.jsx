@@ -2,12 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 
-const Card = ({children, bg="bg-grey-100" }) => {
+const Card = (props) => {
+
+  const {as: Element, children} = props
 
     return (
-    <div className = {`${bg} p-6 rounded-lg shadow-md`}> 
+    <Element className = {`${children.bg} p-6 rounded-lg shadow-md`}> 
     {children}
-    </div> )
+    </Element> )
   
 };
 
@@ -16,6 +18,10 @@ Card.propTypes = () => {
       children: PropTypes.node.isRequired,
       bg: PropTypes.string
     }
+  }
+
+  Card.defaultProps = {
+    as: 'div'
   }
 
 export default Card

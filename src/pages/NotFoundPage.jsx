@@ -1,9 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaExclamationTriangle } from 'react-icons/fa'
+import { Helmet } from 'react-helmet'
 
 const NotFoundPage = () => {
   return (
+    <>
+    <Helmet><title>Page Not Found!</title></Helmet>
     <section className="text-center flex flex-col justify-center items-center h-96">
     <FaExclamationTriangle className="text-6xl text-yellow-500 mb-4"/>  
     <h1 className="text-6xl font-bold mb-4">404 Not Found</h1>
@@ -13,6 +16,7 @@ const NotFoundPage = () => {
       className="text-white bg-indigo-700 hover:bg-indigo-900 rounded-md px-3 py-2 mt-4"
       >Go Back</Link>
   </section>
+  </>
   )
 }
 

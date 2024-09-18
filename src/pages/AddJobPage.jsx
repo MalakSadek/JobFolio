@@ -2,6 +2,7 @@ import {useState} from "react";
 import {useNavigate} from "react-router-dom"
 import PropTypes from "prop-types"
 import {toast} from 'react-toastify'
+import {Helmet} from 'react-helmet'
 
 
 const AddJobPage = ({ addJobSubmit }) => {
@@ -45,9 +46,10 @@ const AddJobPage = ({ addJobSubmit }) => {
         <div
           className="bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0"
         >
+          <Helmet><title className="text-3xl text-center font-semibold mb-6">Add Job</title></Helmet>
+          
           <form onSubmit={submitForm} >
-            <h2 className="text-3xl text-center font-semibold mb-6">Add Job</h2>
-
+          
             <div className="mb-4">
               <label htmlFor="type" className="block text-gray-700 font-bold mb-2"
                 >Job Type</label

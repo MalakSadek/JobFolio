@@ -2,6 +2,7 @@ import {useLoaderData, useNavigate, useParams} from 'react-router-dom'
 import {useState} from 'react'
 import {toast} from 'react-toastify'
 import PropTypes from 'prop-types'
+import {Helmet} from 'react-helmet'
 
 const EditJobPage = ({editJobData}) => {
 
@@ -49,9 +50,10 @@ const EditJobPage = ({editJobData}) => {
           <div
             className="bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0"
           >
-            <form onSubmit={editForm} >
-              <h2 className="text-3xl text-center font-semibold mb-6">Update Job</h2>
+            <Helmet><title className="text-3xl text-center font-semibold mb-6">Update Job</title></Helmet>
   
+            <form onSubmit={editForm} >
+              
               <div className="mb-4">
                 <label htmlFor="type" className="block text-gray-700 font-bold mb-2"
                   >Job Type</label

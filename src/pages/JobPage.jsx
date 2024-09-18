@@ -4,6 +4,7 @@ import {FaArrowLeft, FaMapMarker} from 'react-icons/fa'
 import {Link} from 'react-router-dom'
 import PropTypes from 'prop-types'
 import {toast} from 'react-toastify'
+import {Helmet} from 'react-helmet'
 
 const JobPage = ({deleteJob}) => {
 
@@ -43,6 +44,7 @@ const JobPage = ({deleteJob}) => {
   // }, [id])
 
   return <>
+  <Helmet><title>{job.title}</title></Helmet>
   <section>
       <div className="container m-auto py-6 px-6">
         <Link
