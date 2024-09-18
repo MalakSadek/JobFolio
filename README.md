@@ -9,7 +9,9 @@ JobFolio is a front-end web application that displays and manages job postings. 
 - Form-based screens for adding, updating, and deleting jobs utilising PUT, POST and DELETE requests as mock API calls to a local `json-server`
 
 ## Screenshots
-
+![Screenshot of the homepage for JobFolio showing some recent jobs.](/src/assets/screenshots/JobFolio-HomeScreen.png)
+![Screenshot of a single job's details showing the role, type, description, salary, location, company name, company description, and contacts.](/src/assets/screenshots/JobFolio-JobListing.png)
+![Screenshot of a form for adding new jobs by entering all the relevant information.](/src/assets/screenshots/JobFolio-AddJob.png)
 
 ## Installation and Running the Application
 
@@ -24,7 +26,7 @@ JobFolio is a front-end web application that displays and manages job postings. 
    `npm run preview` <br/> 
 5. Open your browser and navigate to the local address provided by Vite <br/>
 
-##Project Structure
+## Project Structure
 
 ```
 💼 JobFolio
@@ -69,7 +71,6 @@ JobFolio is a front-end web application that displays and manages job postings. 
 This project is licensed under the MIT License.
 
 ## Contact
-Malak Sadek - [https://malaksadekapps.com/](https://malaksadekapps.com/) <br/>
+Author: Malak Sadek - [Personal Website](https://malaksadekapps.com/) - [Linkedin](https://linkedin.com/in/MalakSadek) <br/>
 Project Link: [https://github.com/MalakSadek/JobFolio](https://github.com/MalakSadek/JobFolio)
-
 
